@@ -40,7 +40,7 @@ padding-bottom: 51px;
 }
 
 .footer {
-  position: absolute;
+  position: static;
   bottom: 0;
   width: 100%;
   background-color: #17a204;
@@ -67,6 +67,8 @@ padding-bottom: 51px;
 }
 
 .footer.py-3.d-block.d-lg-none {
+    height: 68px;
+  bottom: 0;
   background-color: #148405;
 }
 
@@ -125,4 +127,20 @@ padding-bottom: 51px;
     background-position: 180px bottom;
   }
 }
+.container.d-none.d-lg-block.thumbnail-detail {
+  padding-top: 44px;
+  padding-bottom: 0px;
+}
+
+.container.d-none.d-lg-block.button-detail {
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+.container.d-none.d-lg-block.detail-post {
+  padding-top: 31px;
+  padding-bottom: 26px;
+}
+
+
 
