@@ -1,95 +1,31 @@
-<!DOCTYPE html>
-<html>
+{{- partial "head.html" . -}}
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>lumbung</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/Footer-Clean.css">
-    <link rel="stylesheet" href="assets/css/Header-Blue.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-
-<body>
-    <nav class="navbar navbar-light navbar-expand-md navigation-clean-search d-none d-lg-block">
-        <div class="container-fluid container"><a class="navbar-brand d-md-inline-block d-lg-inline-block" href="#"><img src="assets/img/lumbung.png" style="width: 180px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div
-                class="collapse navbar-collapse d-md-inline-block d-lg-inline-block" id="navcol-1">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#" style="color: rgb(255,255,255);">Beranda</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#" style="color: rgb(255,255,255);">Glosarium</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active active" href="#" style="color: rgba(255,255,255,0.48);">Lumbung</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#" style="color: rgb(255,255,255);">Tentang</a></li>
-                </ul>
+{{- partial "header.html" . -}}
+{{- partial "mobile.html" . -}}
+<div class="container d-none d-lg-block" style="padding-top: 50px;">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="btn-group" role="group" id="btn-category">
+                <button class="btn btn-primary active btn-filter" type="button" style="width: 100px;">Semua</button>
+                <button class="btn btn-primary btn-filter" type="button" style="width: 100px;">Materi</button>
+                <button class="btn btn-primary btn-filter" type="button" style="width: 100px;">Template</button>
+                <button class="btn btn-primary btn-filter" type="button" style="width: 100px;">Tema</button></div>
         </div>
-        </div>
-    </nav>
-    <div class="position-absolute d-block d-lg-none" style="background-position: center;width: 100%;height: 100%;background-size: cover;background-repeat: no-repeat;z-index: -1;font-family: 'Source Sans Pro', sans-serif;">
-        <div class="d-block d-lg-none test"></div>
-        <div class="container d-block d-lg-none" style="padding-top: 31px;padding-bottom: 26px;z-index: 0;color: rgb(255,255,255);">
-            <div class="row" style="padding-left: 30px;padding-right: 30px;">
-                <div class="col-sm-9 col-md-10 p-3"><img class="title" src="assets/img/lumbung.png" style="width: 179px;padding-bottom: 51px;">
-                    <p style="color: rgb(255,255,255);padding-top: 8px;font-size: 2vw;font-family: 'Source Sans Pro', sans-serif;">Lumbung LibreOffice merupakan&nbsp;laman berbagi template<br>khusus untuk aplikasi perkantoran LibreOffice. Halaman ini <br>diberdayakan oleh Komunitas LibreOffice Indonesia.<br><br>Untuk dapat mengunduh template, silakan akses halaman
-                        ini<br>menggunakan peramban desktop Anda.<br></p>
-                    <p style="color: rgb(255,255,255);padding-top: 38px;font-size: 2vw;font-family: 'Source Sans Pro', sans-serif;height: 11px;padding-bottom: 10px;">Mari Bersapa<br></p>
-                    <div style="padding-top: 0px;"><a href="#" style="color: rgb(255,255,255);padding-right: 12px;"><i class="fa fa-github my-auto"></i></a><a href="#" style="color: rgb(255,255,255);padding-right: 12px;"><i class="fa fa-envelope my-auto"></i></a><a href="#" style="color: rgb(255,255,255);padding-right: 12px;"><i class="fa fa-twitter my-auto"></i></a>
-                        <a
-                            href="#" style="color: rgb(255,255,255);padding-right: 12px;"><i class="fa fa-telegram my-auto"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="col-md-4 text-right align-self-center"><input type="search"></div>
     </div>
-    <div class="container d-none d-lg-block" style="padding-top: 50px;">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="btn-group" role="group" id="btn-category"><button class="btn btn-primary active btn-filter" type="button" style="width: 100px;">Semua</button><button class="btn btn-primary btn-filter" type="button" style="width: 100px;">Materi&nbsp;</button><button class="btn btn-primary btn-filter"
-                        type="button" style="width: 100px;">Template</button><button class="btn btn-primary btn-filter" type="button" style="width: 100px;">Tema</button></div>
-            </div>
-            <div class="col-md-4 text-right align-self-center"><input type="search"></div>
+</div>
+    
+<div class="container d-none d-lg-block" style="padding-top: 31px;padding-bottom: 26px;">
+    <div class="row">
+        <div class="col-md-2 col-lg-2"><img class="img-thumbnail" src="{{  "img/thumbnail-lumbung.png" | absURL }}"></div>
+        <div class="col-md-8">
+            <h4 style="color: rgb(66,71,76);font-family: 'Source Sans Pro', sans-serif;letter-spacing: 0px;font-style: normal;font-weight: bold;">Judul Sumber Daya</h4>
+            <small style="color: rgb(23,162,4);">Tema&nbsp;|&nbsp;oleh: Rania Amina pada 16 Oktober 2019</small>
+            <p style="color: rgb(66,71,76);padding-top: 8px;font-size: 12px;">Lorem ipsum dolor sit amet. Ini keterangan tentang sumber daya terkait. Panjangnya bisa disesuaikan atau dibatasi sejumlah beberapa ratuskarakter saja agar lebih seragam.<br></p>
         </div>
+        <div class="col-md-2 col-lg-2 align-self-lg-center">
+            <button class="btn btn-primary btn-block d-block border-0" type="button" style="background-color: rgb(23,162,4);font-family: 'Source Sans Pro', sans-serif;">Unduh</button>
+            <button class="btn btn-primary btn-block d-block border-0" type="button" style="background-color: rgb(236,145,38);font-family: 'Source Sans Pro', sans-serif;">Detail</button></div>
     </div>
-    <div class="container d-none d-lg-block" style="padding-top: 31px;padding-bottom: 26px; z-index: 0;">
-        <div class="row">
-            <div class="col-md-2 col-lg-2"><img class="img-thumbnail" src="assets/img/thumbnail-lumbung.png"></div>
-            <div class="col-md-8">
-                <h4 style="color: rgb(66,71,76);font-family: 'Source Sans Pro', sans-serif;letter-spacing: 0px;font-style: normal;font-weight: bold;">Judul Sumber Daya</h4><small style="color: rgb(23,162,4);">Tema&nbsp;|&nbsp;oleh: Rania Amina pada 16 Oktober 2019</small>
-                <p style="color: rgb(66,71,76);padding-top: 8px;font-size: 12px;">Lorem ipsum dolor sit amet. Ini keterangan tentang sumber daya terkait. Panjangnya bisa disesuaikan atau dibatasi sejumlah beberapa ratuskarakter saja agar lebih seragam.<br></p>
-            </div>
-            <div class="col-md-2 col-lg-2 align-self-lg-center"><button class="btn btn-primary btn-block d-block border-0" type="button" style="background-color: rgb(23,162,4);font-family: 'Source Sans Pro', sans-serif;">Unduh</button><button class="btn btn-primary btn-block d-block border-0" type="button"
-                    style="background-color: rgb(236,145,38);font-family: 'Source Sans Pro', sans-serif;">Detail</button></div>
-        </div>
-    </div>
-    <footer class="footer py-3 d-none d-lg-block" style="height: 68px;">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-6 align-self-sm-center mb-2 mb-md-0 text-center text-md-left">
-                    <p class="mb-0">Komunitas LibreOffice Indonesia</p>
-                </div>
-                <div class="col-md-6 item social text-center text-md-right">
-                    <div><a class="btn btn-outline btn-socmed mx-2"><i class="fa fa-github my-auto"></i></a><a class="btn btn-outline btn-socmed mx-2"><i class="fa fa-envelope"></i></a><a class="btn btn-outline btn-socmed mx-2"><i class="fa fa-twitter"></i></a>
-                        <a
-                            class="btn btn-outline btn-socmed mx-2"><i class="fa fa-telegram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <footer class="footer py-3 d-block d-lg-none" style="height: 52px;">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col text-sm-center text-md-center align-self-center align-self-sm-center align-self-md-center mb-2 mb-md-0 text-center text-md-left" style="font-family: 'Source Sans Pro', sans-serif;font-size: 15px;">
-                    <p class="mb-0">Komunitas LibreOffice Indonesia</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/button-handler.js"></script>
-</body>
-
-</html>
+</div>
+{{- partial "footer.html" . -}}
