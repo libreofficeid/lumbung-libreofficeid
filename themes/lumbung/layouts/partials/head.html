@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-<title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
+<title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
 {{ hugo.Generator }}
 <meta name="description" content="{{ .Site.Params.Description }}">
 {{- template "_internal/opengraph.html" . -}}
@@ -18,4 +16,3 @@
 <link rel="stylesheet" href="{{ "css/Footer-Clean.css" | absURL }}">
 <link rel="stylesheet" href="{{ "css/styles.css" | absURL }}">
 </head>
-<body>
