@@ -11,5 +11,5 @@ features = []
 min_version = "0.41"
 
 [author]
-  name = "artemtech"
-  homepage = "https://github.com/artemtech"
+  name = "LibreofficeID"
+  homepage = "https://github.com/libreofficeid"
