@@ -1,6 +1,9 @@
-{{- partial "head.html" . -}}
-
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+    {{- partial "head.html" . -}}
+<body>
 {{- partial "header.html" . -}}
+
 {{- partial "mobile.html" . -}}
 <div class="container d-none d-lg-block" style="padding-top: 50px;">
     <div class="row">
@@ -14,18 +17,14 @@
         <div class="col-md-4 text-right align-self-center"><input type="search"></div>
     </div>
 </div>
-    
-<div class="container d-none d-lg-block" style="padding-top: 31px;padding-bottom: 26px;">
-    <div class="row">
-        <div class="col-md-2 col-lg-2"><img class="img-thumbnail" src="{{  "img/thumbnail-lumbung.png" | absURL }}"></div>
-        <div class="col-md-8">
-            <h4 style="color: rgb(66,71,76);font-family: 'Source Sans Pro', sans-serif;letter-spacing: 0px;font-style: normal;font-weight: bold;">Judul Sumber Daya</h4>
-            <small style="color: rgb(23,162,4);">Tema&nbsp;|&nbsp;oleh: Rania Amina pada 16 Oktober 2019</small>
-            <p style="color: rgb(66,71,76);padding-top: 8px;font-size: 12px;">Lorem ipsum dolor sit amet. Ini keterangan tentang sumber daya terkait. Panjangnya bisa disesuaikan atau dibatasi sejumlah beberapa ratuskarakter saja agar lebih seragam.<br></p>
-        </div>
-        <div class="col-md-2 col-lg-2 align-self-lg-center">
-            <button class="btn btn-primary btn-block d-block border-0" type="button" style="background-color: rgb(23,162,4);font-family: 'Source Sans Pro', sans-serif;">Unduh</button>
-            <button class="btn btn-primary btn-block d-block border-0" type="button" style="background-color: rgb(236,145,38);font-family: 'Source Sans Pro', sans-serif;">Detail</button></div>
+
+<div class="templates d-none d-lg-block">
+    <div class="container">
+        {{ range first 5 (where .Site.RegularPages "Section" "!=" "") }}
+            {{- partial "content-list.html" . }}
+        {{ end }}
     </div>
 </div>
 {{- partial "footer.html" . -}}
+</body>
+</html>
