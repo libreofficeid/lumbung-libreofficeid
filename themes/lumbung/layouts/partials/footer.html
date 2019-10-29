@@ -1,32 +1,30 @@
-    <footer class="footer-clean py-3">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-6 align-self-center mb-2 mb-md-0 text-center text-md-left">
-                    <p class="mb-0">Komunitas <b>LibreOffice</b> Indonesia</p>
-                </div>
-                <div class="col-md-6 item social text-center text-md-right d-none d-lg-block">
-                    {{ if .Site.Params.Socmed.Github }}
-                        <a href="https://github.com/{{ .Site.Params.Socmed.Github }}" title="{{ .Site.Params.Socmed.Github }}"><i class="fa fa-github my-auto"></i></a>
-                    {{ end }}
-                    {{ if .Site.Params.Socmed.Twitter }}
-                        <a href="https://twitter.com/{{ .Site.Params.Socmed.Twitter }}" title="{{ .Site.Params.Socmed.Twitter }}"><i class="fa fa-twitter"></i></a>
-                    {{ end }}
-                    {{ if .Site.Params.Socmed.Instagram }}
-                        <a href="https://instagram.com/{{ .Site.Params.Socmed.Instagram }}" title="{{ .Site.Params.Socmed.Instagram }}"><i class="fa fa-instagram"></i></a>
-                    {{ end }}
-                    {{ if .Site.Params.Socmed.Telegram }}
-                        <a href="https://t.me/{{ .Site.Params.Socmed.Telegram }}" title="{{ .Site.Params.Socmed.Telegram }}"><i class="fa fa-telegram"></i></a>
-                    {{ end }}
-                    {{ if .Site.Params.Socmed.Email }}
-                        <a href="mailto:{{ .Site.Params.Socmed.Email }}" title="{{ .Site.Params.Socmed.Email }}"><i class="fa fa-envelope"></i></a>
-                    {{ end }}
-                </div>
+<footer class="footer-clean py-3">
+    <div class="container h-100">
+        <div class="row justify-content-center h-100">
+            <div class="col-12 col-md-6 align-self-center text-center text-md-left">
+                <p class="my-auto">Komunitas <b>LibreOffice</b> Indonesia</p>
+            </div>
+            <div class="col-md-6 item social text-center text-md-right d-none d-lg-block">
+                {{ if .Site.Params.Socmed.Github }}
+                    <a href="https://github.com/{{ .Site.Params.Socmed.Github }}" title="{{ .Site.Params.Socmed.Github }}"><i class="fa fa-github my-auto"></i></a>
+                {{ end }}
+                {{ if .Site.Params.Socmed.Twitter }}
+                    <a href="https://twitter.com/{{ .Site.Params.Socmed.Twitter }}" title="{{ .Site.Params.Socmed.Twitter }}"><i class="fa fa-twitter"></i></a>
+                {{ end }}
+                {{ if .Site.Params.Socmed.Instagram }}
+                    <a href="https://instagram.com/{{ .Site.Params.Socmed.Instagram }}" title="{{ .Site.Params.Socmed.Instagram }}"><i class="fa fa-instagram"></i></a>
+                {{ end }}
+                {{ if .Site.Params.Socmed.Telegram }}
+                    <a href="https://t.me/{{ .Site.Params.Socmed.Telegram }}" title="{{ .Site.Params.Socmed.Telegram }}"><i class="fa fa-telegram"></i></a>
+                {{ end }}
+                {{ if .Site.Params.Socmed.Email }}
+                    <a href="mailto:{{ .Site.Params.Socmed.Email }}" title="{{ .Site.Params.Socmed.Email }}"><i class="fa fa-envelope"></i></a>
+                {{ end }}
             </div>
         </div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ "js/button-handler.js" | absURL }}"></script>
-    {{ template "_internal/google_analytics_async.html" . }}
-</body>
-</html>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="{{ "js/button-handler.js" | absURL }}"></script>
+{{ template "_internal/google_analytics_async.html" . }}
