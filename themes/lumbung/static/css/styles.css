@@ -1,5 +1,4 @@
 body{
-  color:rgb(255,255,255);
   margin-top:0;
   position: relative;
   min-height: 100vh;
@@ -115,10 +114,13 @@ body{
   padding-bottom: 20px;
 }
 
-.container.d-none.d-lg-block.detail-post {
+.detail-post {
+  height: 100vh;
   padding-top: 31px;
   padding-bottom: 26px;
 }
 
-
-
+div.templates{
+  height: 100vh;
+  padding-top: 1.5rem;
+}
