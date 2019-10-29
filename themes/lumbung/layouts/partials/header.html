@@ -1,7 +1,7 @@
 <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
     <div class="container-fluid container">
         <a class="navbar-brand" href="{{ .Site.BaseURL }}">
-            <img src="{{ "img/lumbung.png" | absURL }}" style="width: 180px;">
+            <img src="{{ "img/lumbung.png" | absURL }}" style="width: 180px;" alt="logo-lumbung" aria-label="logo lumbung">
         </a>
         <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
             <span class="sr-only">Toggle navigation</span>
@@ -9,10 +9,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navcol-1">
             <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item" role="presentation"><a class="nav-link" href="https://libreoffice.id">Beranda</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="https://glosarium.libreoffice.id">Glosarium</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link active" href="{{ .Site.BaseURL }}">Lumbung</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="#">Tentang</a></li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" href="https://libreoffice.id">Beranda</a></li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" href="https://glosarium.libreoffice.id">Glosarium</a></li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" href="{{ .Site.BaseURL }}">Lumbung</a></li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" href="#">Tentang</a></li>
             </ul>
         </div>
     </div>
