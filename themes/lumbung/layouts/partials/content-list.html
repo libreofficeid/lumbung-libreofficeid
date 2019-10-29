@@ -1,0 +1,18 @@
+<div class="konten-templates {{ .Params.Categories | lower}}">
+    <div class="row mb-3">
+        <div class="col-md-2 col-lg-2">
+        {{ $contenturl := .Permalink }}
+        {{ range first 1 .Params.Thumbnails }}
+            <img class="img-thumbnail" src="{{ $contenturl }}{{ . }}">
+        {{ end }}
+        </div>
+        <div class="col-md-8">
+            <h4>{{ .Title }}</h4>
+            <small style="color: rgb(23,162,4);">{{ .Params.Categories }}&nbsp;|&nbsp;oleh: <a href="{{ .Params.creator.gitlink }}">{{ .Params.creator.name }}</a> pada {{ .Date.Day }} {{ index $.Site.Data.bulan (printf "%d" .Date.Month) | humanize }} {{ .Date.Year }}.</small>
+            <p style="color: rgb(66,71,76);padding-top: 8px;font-size: 12px;">{{.Summary}}<br></p>
+        </div>
+        <div class="col-md-2 col-lg-2 align-self-lg-center">
+            <a class="btn btn-primary btn-block d-block border-0" href="{{ $contenturl }}{{ .Params.Downloadfile }}" style="background-color: rgb(23,162,4)">Unduh</a>
+            <a class="btn btn-primary btn-block d-block border-0" href="{{ $contenturl }}" style="background-color: rgb(236,145,38)">Detail</a></div>
+    </div>
+</div>
