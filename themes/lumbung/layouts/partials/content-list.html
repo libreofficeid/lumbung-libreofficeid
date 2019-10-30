@@ -2,8 +2,10 @@
     <div class="row mb-3">
         <div class="col-md-2 col-lg-2">
         {{ $contenturl := .Permalink }}
+        {{ if .Params.Thumbnails }}
         {{ range first 1 .Params.Thumbnails }}
             <img class="img-thumbnail" src="{{ $contenturl }}{{ . }}" alt="thumbnail">
+        {{ end }}
         {{ end }}
         </div>
         <div class="col-md-8">
