@@ -115,12 +115,10 @@ body{
 }
 
 .detail-post {
-  height: 100vh;
   padding-top: 31px;
   padding-bottom: 26px;
 }
 
 div.templates{
-  height: 100vh;
   padding-top: 1.5rem;
 }
