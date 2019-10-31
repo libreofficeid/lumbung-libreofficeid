@@ -22,23 +22,21 @@ var fuseOptions = {
 var searchQuery = param("s");
 if(searchQuery){
   $("#search-query").val(searchQuery);
-  console.log("dudududududududu");
   executeSearch(searchQuery);
 }else {
-  $('#search-results').append("<p>Please enter a word or phrase above</p>");
+  $('#search-results').append("<p class='text-danger'>Masukkan kata kunci di kotak pencarian!</p>");
 }
 
 function executeSearch(searchQuery){
   $.getJSON( "/index.json", function( data ) {
     var pages = data;
-    console.log(data);
     var fuse = new Fuse(pages, fuseOptions);
     var result = fuse.search(searchQuery);
-    console.log({"matches":result});
+    // console.log({"matches":result});
     if(result.length > 0){
       populateResults(result);
     }else{
-      $('#search-results').append("<p>No matches found</p>");
+      $('#search-results').append("<p class='text-danger'>Yang Anda cari tidak ketemu :(</p>");
     }
   });
 }
@@ -72,6 +70,7 @@ function populateResults(result){
     var templateDefinition = $('#search-result-template').html();
     //replace values
     var output = render(templateDefinition,{key:key,title:value.item.title,link:value.item.permalink,tags:value.item.tags,categories:value.item.categories,thumbnails:value.item.thumbnails[0],creator:value.item.creator,snippet:snippet});
+    $('#resultkey').append(searchQuery);
     $('#search-results').append(output);
     $('#search-results .konten-templates').removeClass("d-none");
     $.each(snippetHighlights,function(snipkey,snipvalue){
