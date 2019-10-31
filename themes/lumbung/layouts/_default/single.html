@@ -1,4 +1,7 @@
-    {{ define "main" }}
+{{ define "main" }}
+    <div class="container d-none d-lg-block pt-3">
+        {{- partial "breadcrumb.html" . -}}
+    </div>
     <div class="container d-none d-lg-block thumbnail-detail">
         <div class="row">
             <div class="col-sm-3"></div>
@@ -39,7 +42,7 @@
                         <a href="{{ .Params.Downloadfile }}" class="btn btn-primary btn-block btn-sm text-center d-block" type="button" style="height: 35px; width: 70%; background-color: rgb(23,162,4);">Unduh</a>
                     </div>
                     <div class="row">
-                        <a href="#" class="btn btn-primary btn-block btn-sm text-center d-block" type="button" style="height: 35px; width: 70%; color: rgb(23,162,4); stroke: rgb(23,162,4); background-color: #fff;">Suka</a>
+                        <a href="#" class="btn btn-outline-success btn-block btn-sm text-center d-block" type="button" style="height: 35px; width: 70%;">Suka</a>
                     </div>
                     <br>
                     <div class="row" style="height: 35px;">
@@ -64,6 +67,14 @@
                         <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/download.svg" alt="download"></i></div>
                         <div class="col-sm-10 align-self-md-baseline" style="padding-top: 4px;">
                             <p class="py-2" style="font-family: 'Source Sans Pro', sans-serif;font-size: 14px;line-height: 12px;">Diunduh 300 kali</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2"><i><img src="/img/tags.svg" alt="tagar"></i></div>
+                        <div class="col-sm-10">
+                            {{ range .Params.Tags }}
+                                <a class="badge badge-success" href="{{ "tags" | absURL }}/{{.}}">{{.}}</a>
+                            {{ end }}
                         </div>
                     </div>
                 </div>
