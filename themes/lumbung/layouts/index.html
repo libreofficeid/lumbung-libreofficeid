@@ -15,9 +15,14 @@
                 <a href="{{ .Site.BaseURL }}tema" class="btn btn-primary btn-filter" style="width: 100px;">Tema</a>
             </div>
         </div>
-        <div class="col-md-4 text-right align-self-center">
+        <div class="col-md-3 ml-auto">
             <form action="{{ "search" | absURL }}">
-                <input class="form-control" placeholder="here we go..." id="search-query" name="s"/>
+            <div class="input-group">
+                <input type="text" class="form-control border border-right-0" name="s" id="search-query" placeholder="Cari...">
+                <div class="input-group-append">
+                    <span class="input-group-text border border-left-0" style="background:transparent"><img src="{{"img/search.svg"|absURL}}" width="12rem" alt="search"></span>
+                </div>
+            </div>
             </form>
         </div>
     </div>
