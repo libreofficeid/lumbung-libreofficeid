@@ -5,17 +5,24 @@
 {{ end }}
 {{ define "main" }}
 <section class="resume-section p-3 p-lg-5 d-flex flex-column">
-  <div class="container" >
-    <div class="row justify-content-center">
-        <div class="col-md-2">
-            <button class="btn btn-outline-success" type="button" onclick="history.back()" >Kembali</button>
+  <div class="container">
+    <div class="row mb-3" id="breadcrumbs">
+        <div class="col-md-4">
+            <a class="text-success" href="/">Lumbung</a>&nbsp;/
+            <span>Hasil pencarian untuk: <i id="resultkey"></i></span>
         </div>
-        <div class="col-md-6 col-12">
-            <form action="{{ "search" | absURL }}"><input class="form-control" id="search-query" name="s"/></form>
+        <div class="col-md-3 ml-auto">
+            <form action="{{ "search" | absURL }}">
+            <div class="input-group">
+                <input type="text" class="form-control border border-right-0" name="s" id="search-query" placeholder="Cari...">
+                <div class="input-group-append">
+                    <span class="input-group-text border border-left-0" style="background:transparent"><img src="{{"img/search.svg"|absURL}}" width="12rem" alt="search"></span>
+                </div>
+            </div>
+            </form>
         </div>
     </div>
     <div id="search-results">
-     <h3>Matching pages</h3>
     </div>
   </div>
 </section>
