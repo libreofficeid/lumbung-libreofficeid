@@ -15,7 +15,11 @@
                 <a href="{{ .Site.BaseURL }}tema" class="btn btn-primary btn-filter" style="width: 100px;">Tema</a>
             </div>
         </div>
-        <div class="col-md-4 text-right align-self-center"><input class="form-control" type="search" name="search" aria-label="search"></div>
+        <div class="col-md-4 text-right align-self-center">
+            <form action="{{ "search" | absURL }}">
+                <input class="form-control" placeholder="here we go..." id="search-query" name="s"/>
+            </form>
+        </div>
     </div>
 </div>
 
