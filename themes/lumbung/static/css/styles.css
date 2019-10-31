@@ -104,11 +104,6 @@ body{
 
 /* ./MOBILE ONLY */
 
-.container.d-none.d-lg-block.thumbnail-detail {
-  padding-top: 44px;
-  padding-bottom: 0px;
-}
-
 .container.d-none.d-lg-block.button-detail {
   padding-top: 0;
   padding-bottom: 20px;
