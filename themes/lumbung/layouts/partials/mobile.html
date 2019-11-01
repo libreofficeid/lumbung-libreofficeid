@@ -1,0 +1,34 @@
+<div class="mobile-only d-block d-lg-none" >
+    <div class="ilustrasi"></div>
+    <div class="container d-block d-lg-none" style="padding-top: 31px;padding-bottom: 26px;">
+        <div class="row">
+            <div class="col-10 col-md-10 p-3">
+                <p>
+                    Lumbung LibreOffice merupakan laman berbagi template
+                    khusus untuk aplikasi perkantoran LibreOffice. Halaman ini
+                    diberdayakan oleh Komunitas LibreOffice Indonesia.<br/><br/>
+                    Untuk dapat mengunduh template, silakan akses halaman
+                    ini menggunakan peramban desktop Anda.
+                </p>
+                <p style="margin-top:3rem">Mari Bersapa<br></p>
+                <div class="item social">
+                    {{ if .Site.Params.Socmed.Github }}
+                        <a href="https://github.com/{{ .Site.Params.Socmed.Github }}" title="{{ .Site.Params.Socmed.Github }}"><i class="fa fa-github my-auto"></i></a>
+                    {{ end }}
+                    {{ if .Site.Params.Socmed.Twitter }}
+                        <a href="https://twitter.com/{{ .Site.Params.Socmed.Twitter }}" title="{{ .Site.Params.Socmed.Twitter }}"><i class="fa fa-twitter"></i></a>
+                    {{ end }}
+                    {{ if .Site.Params.Socmed.Instagram }}
+                        <a href="https://instagram.com/{{ .Site.Params.Socmed.Instagram }}" title="{{ .Site.Params.Socmed.Instagram }}"><i class="fa fa-instagram"></i></a>
+                    {{ end }}
+                    {{ if .Site.Params.Socmed.Telegram }}
+                        <a href="https://t.me/{{ .Site.Params.Socmed.Telegram }}" title="{{ .Site.Params.Socmed.Telegram }}"><i class="fa fa-telegram"></i></a>
+                    {{ end }}
+                    {{ if .Site.Params.Socmed.Email }}
+                        <a href="mailto:{{ .Site.Params.Socmed.Email }}" title="{{ .Site.Params.Socmed.Email }}"><i class="fa fa-envelope"></i></a>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

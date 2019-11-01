@@ -1,0 +1,27 @@
+baseURL: "https://lumbung.libreoffice.id/"
+languageCode: "id"
+title: "Lumbung LibreOffice Indonesia"
+paginate: 5
+theme: "lumbung"
+outputs:
+  home: ["HTML", "RSS", "JSON"]
+params:
+# description untuk membuat meta website
+  description: "Lumbung LibreOffice merupakan laman berbagi template khusus untuk aplikasi perkantoran LibreOffice. Halaman ini diberdayakan oleh Komunitas LibreOffice Indonesia. Untuk dapat mengunduh template, silakan akses halaman ini menggunakan peramban desktop Anda."
+  # images digunakan untuk mendaftarkan opengraph dan tag twitter
+  # jika tidak diperlukan, Anda kosongi saja
+  images: ["screenshot.png"]
+  # daftar menu yang akan ditampilkan beserta tautannya
+  menu:
+    beranda:
+      title: "Beranda"
+      link: "/"
+# daftar sosial media yang didukung, jika tidak ingin diisi, silakan dikosongi
+  socmed:
+    twitter: "libreofficeid"
+    telegram: "librofficeid"
+    instagram: "libreofficeid"
+    github: "libreofficeid"
+    email: "humas@libreoffice.id"
+# id google analytics,
+# googleAnalytics: UA-123-45

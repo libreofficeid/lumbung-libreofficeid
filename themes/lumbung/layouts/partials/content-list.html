@@ -1,0 +1,20 @@
+<div class="konten-templates {{ .Params.Categories | lower}}">
+    <div class="row mb-3">
+        <div class="col-md-2 col-lg-2">
+        {{ $contenturl := .Permalink }}
+        {{ if .Params.Thumbnails }}
+        {{ range first 1 .Params.Thumbnails }}
+            <img class="img-thumbnail" src="{{ $contenturl }}{{ . }}" alt="thumbnail">
+        {{ end }}
+        {{ end }}
+        </div>
+        <div class="col-md-8">
+            <h4>{{ .Title }}</h4>
+            <small style="color: rgb(23,162,4); font-size: .9em;"><b>{{ .Params.Categories }}&nbsp;</b>|<a href="{{ .Params.creator.gitlink }}">{{ .Params.creator.name }}</a>&nbsp;&nbsp;{{ range .Params.Tags }}<a class="badge badge-success" href="{{ "tags" | absURL }}/{{.}}">{{.}}</a> {{ end }}</small>
+            <p>{{.Summary}}<br></p>
+        </div>
+        <div class="col-md-2 col-lg-2 align-self-lg-center">
+            <a class="btn btn-primary btn-block d-block border-0" href="{{ $contenturl }}{{ .Params.Downloadfile }}" style="background-color: rgb(23,162,4)">Unduh</a>
+            <a class="btn btn-primary btn-block d-block border-0" href="{{ $contenturl }}" style="background-color: rgb(236,145,38)">Detail</a></div>
+    </div>
+</div>

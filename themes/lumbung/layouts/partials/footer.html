@@ -1,0 +1,30 @@
+<footer class="footer-clean mt-auto py-3">
+    <div class="container h-100">
+        <div class="row justify-content-center h-100">
+            <div class="col-12 col-md-6 align-self-center text-center text-md-left">
+                <p class="my-auto">Komunitas <b>LibreOffice</b> Indonesia</p>
+            </div>
+            <div class="col-md-6 item social text-center text-md-right d-none d-lg-block">
+                {{ if .Site.Params.Socmed.Github }}
+                    <a href="https://github.com/{{ .Site.Params.Socmed.Github }}" title="{{ .Site.Params.Socmed.Github }}"><i><img src="/img/github.svg" alt="github"></i></a>
+                {{ end }}
+                {{ if .Site.Params.Socmed.Twitter }}
+                    <a href="https://twitter.com/{{ .Site.Params.Socmed.Twitter }}" title="{{ .Site.Params.Socmed.Twitter }}"><i><img src="/img/twitter.svg" alt="twitter"></i></a>
+                {{ end }}
+                {{ if .Site.Params.Socmed.Instagram }}
+                    <a href="https://instagram.com/{{ .Site.Params.Socmed.Instagram }}" title="{{ .Site.Params.Socmed.Instagram }}"><i></i><img src="/img/instagram.svg" alt="instagram"></a>
+                {{ end }}
+                {{ if .Site.Params.Socmed.Telegram }}
+                    <a href="https://t.me/{{ .Site.Params.Socmed.Telegram }}" title="{{ .Site.Params.Socmed.Telegram }}"><i><img src="/img/telegram-plane.svg" alt="Telegram"></i></a>
+                {{ end }}
+                {{ if .Site.Params.Socmed.Email }}
+                    <a href="mailto:{{ .Site.Params.Socmed.Email }}" title="{{ .Site.Params.Socmed.Email }}"><i><img src="/img/envelope.svg" alt="Email"></i></a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="{{ "js/button-handler.js" | absURL }}"></script>
+{{ template "_internal/google_analytics_async.html" . }}
