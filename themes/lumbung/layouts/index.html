@@ -28,7 +28,7 @@
     </div>
 </div>
 
-<div class="templates d-none d-lg-block">
+<div class="templates d-none d-lg-block mb-5 py-5">
     <div class="container">
         {{ $paginator := .Paginate (where .Site.RegularPages "Section" "!=" "") }}
         {{ range $paginator.Pages }}
