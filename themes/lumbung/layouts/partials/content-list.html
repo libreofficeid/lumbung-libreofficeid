@@ -9,7 +9,7 @@
         {{ end }}
         </div>
         <div class="col-md-8">
-            <h4>{{ .Title }}</h4>
+            <a href="{{ $contenturl }}"><h4 style="color: rgb(23,162,4);"><b>{{ .Title }}</b></h4></a>
             <small style="color: rgb(23,162,4); font-size: .9em;"><b>{{ .Params.Categories }}&nbsp;</b>| <a href="{{ .Params.creator.gitlink }}">{{ .Params.creator.name }}</a>&nbsp;&nbsp;{{ range .Params.Tags }} {{ end }}</small>
             <p>{{.Summary}}<br></p>
         </div>
