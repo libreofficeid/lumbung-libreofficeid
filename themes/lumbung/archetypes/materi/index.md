@@ -6,7 +6,7 @@ creator:
   name: "LibreOffice ID"
   gitlink: "https://github.com/#"
 tags: []
-thumbnails: []
+thumbnails: [assets/thumbnail.png]
 downloadfile: ""
 license: "CC-BY-SA"
 ---
