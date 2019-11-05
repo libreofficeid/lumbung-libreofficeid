@@ -5,8 +5,9 @@ categories: "materi"
 creator: 
   name: "Rania Amina"
   gitlink: "https://github.com/raniaamina"
-tags: []
+tags: ["loci","personalize"]
 thumbnails: ["assets/thumb.png"]
 downloadfile: "assets/Ahmad Romadhon H_Personalize LibreOffice Appearance.pdf"
+license: "CC-BY-SA"
 ---
 **Tulis deskripsi singkat tentang materi ini.**

@@ -8,5 +8,6 @@ creator:
 tags: []
 thumbnails: []
 downloadfile: ""
+license: "CC-BY-SA"
 ---
 **Tulis deskripsi singkat tentang materi ini.**

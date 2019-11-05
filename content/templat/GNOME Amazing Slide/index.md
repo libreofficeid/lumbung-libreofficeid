@@ -8,5 +8,6 @@ creator:
 tags: []
 thumbnails: ["assets/thumb-1.png","assets/thumb-2.png","assets/thumb-3.png"]
 downloadfile: "assets/gnome-amazing-slides.otp"
+license: "CC-BY-SA"
 ---
 **Tulis deskripsi singkat tentang templat ini.**
