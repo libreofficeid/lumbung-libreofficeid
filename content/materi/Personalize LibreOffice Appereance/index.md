@@ -1,7 +1,7 @@
 ---
 title: "Personalize LibreOffice Appereance"
 date: 2019-10-29T12:02:22+07:00
-categories: "materi"
+categories: "Materi"
 creator: 
   name: "Rania Amina"
   gitlink: "https://github.com/raniaamina"
@@ -10,4 +10,6 @@ thumbnails: ["assets/thumb.png"]
 downloadfile: "assets/Ahmad Romadhon H_Personalize LibreOffice Appearance.pdf"
 license: "CC-BY-SA"
 ---
-**Tulis deskripsi singkat tentang materi ini.**
+Penjelasan ringkas tentang personalisasi tema LibreOffice versi 6.1. Materi ini disampaiakan saat LibreOffice Conference Indonesia di Politeknik Elektronika Negeri Surabaya pada 2018 lalu. 
+
+
