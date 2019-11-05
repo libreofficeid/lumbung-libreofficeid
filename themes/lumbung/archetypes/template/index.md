@@ -1,9 +1,9 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-categories: "template"
+categories: "Templat"
 creator: 
-  name: "insert your name here"
+  name: "LibreOffice ID"
   gitlink: "https://github.com/youruser"
 tags: []
 thumbnails: []
@@ -11,3 +11,4 @@ downloadfile: ""
 license: "CC-BY-SA"
 ---
 **Tulis deskripsi singkat tentang templat ini.**
+<!--silakan edit bagian nama, gitlink, thumbnail, link dowload, lisensi jika diperlukan, serta deskripsi-->

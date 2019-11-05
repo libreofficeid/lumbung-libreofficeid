@@ -1,13 +1,14 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-categories: "materi"
+categories: "Materi"
 creator: 
-  name: "insert your name here"
-  gitlink: "https://github.com/youruser"
+  name: "LibreOffice ID"
+  gitlink: "https://github.com/#"
 tags: []
 thumbnails: []
 downloadfile: ""
 license: "CC-BY-SA"
 ---
 **Tulis deskripsi singkat tentang materi ini.**
+<!--silakan edit bagian nama, gitlink, thumbnail, link dowload, lisensi jika diperlukan, serta deskripsi-->
