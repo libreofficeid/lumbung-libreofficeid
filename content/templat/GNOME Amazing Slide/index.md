@@ -11,4 +11,4 @@ downloadfile: "assets/gnome-amazing-slides.otp"
 license: "CC-BY-SA"
 ---
 <!--silakan edit bagian nama, gitlink, thumbnail, link dowload, lisensi jika diperlukan, serta deskripsi-->
-GNOME Amazing Slide, template LibreOffice Impress untuk acara GNOME.Asia Summit 2019 di Universitas Muhammadiyah Gresik.
+GNOME Amazing Slide, template LibreOffice Impress untuk acara GNOME.Asia Summit 2019 di Universitas Muhammadiyah Gresik. <!--more-->

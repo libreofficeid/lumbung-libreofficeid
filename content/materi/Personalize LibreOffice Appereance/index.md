@@ -10,6 +10,6 @@ thumbnails: ["assets/thumb.png"]
 downloadfile: "assets/Ahmad Romadhon H_Personalize LibreOffice Appearance.pdf"
 license: "CC-BY-SA"
 ---
-Penjelasan ringkas tentang personalisasi tema LibreOffice versi 6.1. Materi ini disampaikan saat LibreOffice Conference Indonesia di Politeknik Elektronika Negeri Surabaya pada 2018 lalu. 
+Penjelasan ringkas tentang personalisasi tema LibreOffice versi 6.1. Materi ini disampaikan saat LibreOffice Conference Indonesia  <!--more-->di Politeknik Elektronika Negeri Surabaya pada 2018 lalu. 
 
 
