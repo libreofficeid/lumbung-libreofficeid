@@ -41,9 +41,9 @@
                     <div class="row" style="padding-bottom: 10px;">
                         <a href="{{ .Params.Downloadfile }}" class="btn btn-primary btn-block btn-sm text-center d-block" type="button" style="height: 35px; width: 70%; background-color: rgb(23,162,4);">Unduh</a>
                     </div>
-                        <form action="#" method="POST">
+                        <form action="https://carpal-stoplight.glitch.me/suka" method="POST">
                     <div class="row">
-                        <input type="hidden" name="idcontent" value="{{ md5 .Slug }}"/>
+                        <input type="hidden" name="idcontent" value="{{ md5 .RelPermalink }}"/>
                         <input type="hidden" name="fromuri" value="{{ .Permalink }}"/>
                         <input type="hidden" name="idpengirim"/>
                         <input type="hidden" name="data" />
@@ -69,12 +69,12 @@
                             <p class="py-2" style="font-family: 'Source Sans Pro', sans-serif;height: 44px;line-height: 12px;font-size: 14px;"><span id="disukai"></span> Orang Menyukai</p>
                         </div>
                     </div>
-                    <div class="row" style="height: 35px;">
+                    <!-- <div class="row" style="height: 35px;">
                         <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/download.svg" alt="download"></i></div>
                         <div class="col-sm-10 align-self-md-baseline" style="padding-top: 4px;">
                             <p class="py-2" style="font-family: 'Source Sans Pro', sans-serif;font-size: 14px;line-height: 12px;">Diunduh 300 kali</p>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="row" style="height: 35px;">
                         <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/license.svg" alt="lisensi"></i></div>
                         <div class="col-sm-10 align-self-md-baseline" style="padding-top: 4px;">
@@ -93,4 +93,53 @@
             </div>
         </div>
     </div>
+{{ end }}
+{{ define "footerfiles" }}
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+    <script>
+    $(function(){
+        var suka = Cookies.get("data");
+        ceksuka();
+        if(location.search.substr(1,6) === "status"){
+            let sukaku = parseInt(location.search.substr(8,1));
+            alert("sukses memperbarui suka! "+sukaku);
+            Cookies.remove("data");
+            Cookies.set("data",sukaku,{path:'{{ .RelPermalink }}'});
+            location.href = "{{ .Permalink }}";
+        }
+        if(location.search.substr(1,7) === "payload"){
+            var p = decodeURI(location.search.substr(9));
+            Cookies.set("user",p);
+            location.href = "{{ .Permalink }}";
+        }
+
+        $.get("https://carpal-stoplight.glitch.me/suka/"+$("input[name='idcontent']").val(),null, function(result){
+            $("#disukai").html(result.disukai);
+        });
+
+        function ceksuka(){
+            if(suka == undefined || suka == null)
+                suka = 0
+            if(suka == 1){
+                $("#btnSuka").html("Batal Suka");
+                suka = 0;
+                return;
+            }else{
+                $("#btnSuka").html("Suka");
+                suka = 1;
+                return;
+            }
+        }
+
+        // handle tombol suka
+        $("#btnSuka").on("click", function(){
+            if(Cookies.get('user')){
+                $("input[name='idpengirim']").val(Cookies.get('user'));
+            }
+            $("input[name='data']").val(suka);
+            $("form").submit();
+        })
+
+    })
+    </script>
 {{ end }}
