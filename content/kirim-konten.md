@@ -17,7 +17,7 @@ Lumbung LibreOffice Indonesia (Lumbung), merupakan wadah berbagi sumber daya yan
 
 Untuk Anda yang ingin membagikan sumber daya ke Lumbung, kami telah menyiapkan beberapa metode pengiriman sumber daya.
 
-- Melalui Pull Request  
+#### Melalui Pull Request  
 
 Pastikan [Hugo](https://gohugo.io) sudah terpasang di komputer Anda. Selanjutnya fork & clone repositori ini ke akun Github Anda. Kemudian jalankan salah satu perintah berikut.
 
@@ -44,7 +44,7 @@ Sebelum mendorong perubahan, Anda dapat terlebih dahulu meninjau perubahan yang 
 hugo server
 ```
 
-- Melalui Formulir Google  
+#### Melalui Formulir Google  
 
 Untuk Anda yang belum terbiasa menggunakan perintah-perintah git, kami telah menyediakan Google Form untuk membantu Anda mengirimkan konten sumber daya yang hendak dibagikan.
 
