@@ -1,24 +1,24 @@
 ---
 title: "Kirim Konten"
-date: 2019-11-06T08:57:13+07:00
-draft: true
+layout: "tentang"
 ---
 
 # Lumbung LibreOffice Indonesia
 
-Lumbung LibreOffice Indonesia (Lumbung), merupakan wadah berbagi sumber daya yang berkaitan dengan LibreOffice. Untuk saat ini kami mengelompokkan sumberdaya ini ke dalam tiga kelompok;
-- Materi
-Sumberdaya yang berisi panduan, tutorial, modul, atau sejenisnya.
-- Templat
-Sumber daya berupa templat yang siap pakai untuk writer, calc, impress, atau yang lain.
-- Tema
-Sumber daya berupa tema siap pakai. Kami menyediakan perkakas pembuat dan pengolah tema LibreOffice (khusunya LibreOffice versi 6.2 ke atas) yang dapat diakses melalui [tautan ini](https://github.com/raniaamina/libreoffice-theme).
+Lumbung LibreOffice Indonesia (Lumbung), merupakan wadah berbagi sumber daya yang berkaitan dengan LibreOffice. Untuk saat ini kami mengelompokkan sumberdaya ini ke dalam tiga kelompok:  
+- Materi  
+  Sumberdaya yang berisi panduan, tutorial, modul, atau sejenisnya.  
+- Templat  
+  Sumber daya berupa templat yang siap pakai untuk writer, calc, impress, atau yang lain.  
+- Tema  
+  Sumber daya berupa tema siap pakai. Kami menyediakan perkakas pembuat dan pengolah tema LibreOffice (khusunya LibreOffice versi 6.2 ke atas) yang dapat diakses melalui [tautan ini](https://github.com/raniaamina/libreoffice-theme).
 
 ## Berbagi Sumber Daya
 
 Untuk Anda yang ingin membagikan sumber daya ke Lumbung, kami telah menyiapkan beberapa metode pengiriman sumber daya.
 
-- Melalui Pull Request
+- Melalui Pull Request  
+
 Pastikan [Hugo](https://gohugo.io) sudah terpasang di komputer Anda. Selanjutnya fork & clone repositori ini ke akun Github Anda. Kemudian jalankan salah satu perintah berikut.
 
 ```bash
@@ -44,7 +44,8 @@ Sebelum mendorong perubahan, Anda dapat terlebih dahulu meninjau perubahan yang 
 hugo server
 ```
 
-- Melalui Formulir Google
+- Melalui Formulir Google  
+
 Untuk Anda yang belum terbiasa menggunakan perintah-perintah git, kami telah menyediakan Google Form untuk membantu Anda mengirimkan konten sumber daya yang hendak dibagikan.
 
 Silakan merujuk pada [tautan ini](https://forms.gle/tkAaCzkDL7o1jb7j6) untuk mulai mengirim berkas Anda.
