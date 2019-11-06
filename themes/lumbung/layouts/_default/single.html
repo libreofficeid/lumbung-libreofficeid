@@ -41,12 +41,11 @@
                     <div class="row" style="padding-bottom: 10px;">
                         <a href="{{ .Params.Downloadfile }}" class="btn btn-primary btn-block btn-sm text-center d-block" type="button" style="height: 35px; width: 70%; background-color: rgb(23,162,4);">Unduh</a>
                     </div>
-                        <form action="https://carpal-stoplight.glitch.me/suka" method="POST">
+                        <form action="https://libreofficeid.glitch.me/suka" method="POST">
                     <div class="row">
                         <input type="hidden" name="idcontent" value="{{ md5 .RelPermalink }}"/>
                         <input type="hidden" name="fromuri" value="{{ .Permalink }}"/>
                         <input type="hidden" name="idpengirim"/>
-                        <input type="hidden" name="data" />
                         <button id="btnSuka" class="btn btn-outline-success btn-block btn-sm text-center d-block" type="button" style="height: 35px;width:70%">Suka</button>
                     </div>
                         </form>
@@ -102,7 +101,7 @@
         ceksuka();
         if(location.search.substr(1,6) === "status"){
             let sukaku = parseInt(location.search.substr(8,1));
-            alert("sukses memperbarui suka! "+sukaku);
+            //alert("sukses memperbarui suka! "+sukaku);
             Cookies.remove("data");
             Cookies.set("data",sukaku,{path:'{{ .RelPermalink }}'});
             location.href = "{{ .Permalink }}";
@@ -113,7 +112,7 @@
             location.href = "{{ .Permalink }}";
         }
 
-        $.get("https://carpal-stoplight.glitch.me/suka/"+$("input[name='idcontent']").val(),null, function(result){
+        $.get("https://libreofficeid.glitch.me/suka/"+$("input[name='idcontent']").val(),null, function(result){
             $("#disukai").html(result.disukai);
         });
 
