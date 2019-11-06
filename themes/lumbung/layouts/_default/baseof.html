@@ -4,7 +4,7 @@
     <body class="d-flex flex-column h-100">
         {{- partial "header.html" . -}}
         {{- partial "mobile.html" . -}}
-        <div id="content">
+        <div class="h-100 mb-5 py-5 content">
         {{- block "main" . }}{{- end }}
         </div>
         {{- partial "footer.html" . -}}
