@@ -14,7 +14,7 @@
                 <li class="nav-item" role="presentation">
                     <a class="nav-link" href="https://glosarium.libreoffice.id">Glosarium</a></li>
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link {{ if eq .Permalink (print .Site.BaseURL) }}active{{ end }}" href="{{ .Site.BaseURL }}">Lumbung</a></li>
+                    <a class="nav-link {{ if not (eq .Permalink (print .Site.BaseURL "kirim-konten/"))}}active{{ end }}" href="{{ .Site.BaseURL }}">Lumbung</a></li>
                 <li class="nav-item {{ if eq .Permalink (print .Site.BaseURL "kirim-konten/") }}active{{ end }}" role="presentation">
                     <a class="nav-link" href="/kirim-konten">Mengirim Konten</a></li>
             </ul>
