@@ -4,7 +4,7 @@ date: 2019-10-29T12:02:22+07:00
 categories: "Materi"
 creator: 
   name: "Rania Amina"
-  gitlink: "https://github.com/raniaamina"
+  gitlink: "https://instagram.com/raniaamina.id"
 tags: ["loci","personalize"]
 thumbnails: ["assets/thumb.webp"]
 downloadfile: "assets/Ahmad Romadhon H_Personalize LibreOffice Appearance.pdf"
