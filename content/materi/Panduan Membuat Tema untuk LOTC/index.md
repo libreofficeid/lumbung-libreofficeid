@@ -79,7 +79,7 @@ Bantu para pengguna lain untuk memngenali tema Anda dengan memberikan tangkapan 
 Setelah Anda menyiapkan aset-aset gambar, sekarang mari menyiapkan berkas-berkas konfigurasi. Berikut adalah beberapa berkas konfigurasi yang harus Anda siapkan:
 
 1. **persona_list.txt** <br>
-`persona_list.txt` merupakan berkas konfigurasi untuk mengatur bagaimana tema kita akan ditampilkan. Berkas terserbut memuat informasi sebagai berikut:
+**persona_list.txt** merupakan berkas konfigurasi untuk mengatur bagaimana tema kita akan ditampilkan. Berkas terserbut memuat informasi sebagai berikut:
  - Nama Direktori Tema <br>
  - Nama Tema (akan muncul sebagai tooltip)<br>
  - Lokasi berkas preview<br>
@@ -89,9 +89,8 @@ Setelah Anda menyiapkan aset-aset gambar, sekarang mari menyiapkan berkas-berkas
 
     Berikut merupakan contoh format penulisan informasi di atas (misalnya tema yang dibuat bernama ***rainbow***). 
 
-```bash
-rainbow;Rainbow;rainbow/preview.png;rainbow/header.png;rainbow/footer.png;;#ffffff;#000000
-```
+
+    `rainbow;Rainbow;rainbow/preview.png;rainbow/header.png;rainbow/footer.png;;#ffffff;#000000`
 <br>
 
 2. **sofficerc**<br>
@@ -116,8 +115,10 @@ SecureUserConfigMode=1
 SecureUserConfigNumCopies=2
 URE_BOOTSTRAP=${ORIGIN}/fundamentalrc
 ``` 
-
-    <br>Untuk melakukan kustomsisasi tampilan Anda hanya perlu menyunting beberapa parameter berikut;<br>
+```
+```
+    
+    Untuk melakukan kustomsisasi tampilan Anda hanya perlu menyunting beberapa parameter berikut;<br>
     **A. Logo**<br>
 Parameter untuk menentukan apakah splash ditampilkan atau tidak<br><br>
 **B. NativeProgress**<br>
