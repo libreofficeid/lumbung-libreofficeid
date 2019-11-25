@@ -114,12 +114,10 @@ SecureUserConfigExtensions=true
 SecureUserConfigMode=1
 SecureUserConfigNumCopies=2
 URE_BOOTSTRAP=${ORIGIN}/fundamentalrc
-``` 
 ```
-```
-    
-    Untuk melakukan kustomsisasi tampilan Anda hanya perlu menyunting beberapa parameter berikut;<br>
-    **A. Logo**<br>
+
+Untuk melakukan kustomsisasi tampilan Anda hanya perlu menyunting beberapa parameter berikut;<br>
+**A. Logo**<br>
 Parameter untuk menentukan apakah splash ditampilkan atau tidak<br><br>
 **B. NativeProgress**<br>
 Menampilkan *progressbar* native atau kustom<br><br>
