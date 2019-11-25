@@ -94,7 +94,7 @@ rainbow;Rainbow;rainbow/preview.png;rainbow/header.png;rainbow/footer.png;;#ffff
 <br>
 
 2. **sofficerc**<br>
-**sofficerc** merupakan berkas yang akan mengatur bagaimana splash akan ditampilkan. Berikut merupakan isi dari berkas sofficerc dan beberapa penjelasannya.
+**sofficerc** merupakan berkas yang akan mengatur bagaimana splash akan ditampilkan. Berikut merupakan isi dari berkas sofficerc dan beberapa penjelasannya.<br>
 ```bash
 [Bootstrap]
 CrashDirectory=${$BRAND_BASE_DIR/program/bootstraprc:UserInstallation}/crash
@@ -113,8 +113,8 @@ SecureUserConfigExtensions=true
 SecureUserConfigMode=1
 SecureUserConfigNumCopies=2
 URE_BOOTSTRAP=${ORIGIN}/fundamentalrc
-```
-Untuk melakukan kustomsisasi tampilan Anda hanya perlu menyunting beberapa parameter berikut;<br>
+``` 
+<br>Untuk melakukan kustomsisasi tampilan Anda hanya perlu menyunting beberapa parameter berikut;<br>
 **A. Logo**<br>
 Parameter untuk menentukan apakah splash ditampilkan atau tidak<br><br>
 **B. NativeProgress**<br>
