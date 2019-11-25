@@ -86,7 +86,8 @@ Setelah Anda menyiapkan aset-aset gambar, sekarang mari menyiapkan berkas-berkas
  - Lokasi berkas header<br>
  - Lokasi berkas footer<br>
  - Warna backgrond dan foreground<br><br>
- Berikut merupakan contoh format penulisan informasi di atas (misalnya tema yang dibuat bernama ***rainbow***). 
+
+Berikut merupakan contoh format penulisan informasi di atas (misalnya tema yang dibuat bernama ***rainbow***). 
 
 ```bash
 rainbow;Rainbow;rainbow/preview.png;rainbow/header.png;rainbow/footer.png;;#ffffff;#000000
@@ -95,6 +96,7 @@ rainbow;Rainbow;rainbow/preview.png;rainbow/header.png;rainbow/footer.png;;#ffff
 
 2. **sofficerc**<br>
 **sofficerc** merupakan berkas yang akan mengatur bagaimana splash akan ditampilkan. Berikut merupakan isi dari berkas sofficerc dan beberapa penjelasannya.<br>
+
 ```bash
 [Bootstrap]
 CrashDirectory=${$BRAND_BASE_DIR/program/bootstraprc:UserInstallation}/crash
