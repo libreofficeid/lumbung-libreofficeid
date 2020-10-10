@@ -6,6 +6,7 @@ creator:
   name: "Rizal Muttaqin"
   gitlink: "https://github.com/rizmut"
 tags: ["tema ikon"]
+images: ["assets/thumb.webp"]
 thumbnails: [assets/thumb.webp]
 downloadfile: "https://github.com/rizmut/libreoffice-style-karasa-jaga/raw/master/build/Karasa_Jaga-IconSet/iconsets/images_karasa_jaga.zip"
 license: "CC-BY-SA"

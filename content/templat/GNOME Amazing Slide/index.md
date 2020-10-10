@@ -6,6 +6,7 @@ creator:
   name: "Hervy Qurrotul Ainur"
   gitlink: "https://github.com/hervyqa"
 tags: ["libreoffice impress","template","templat"]
+images: [assets/thumb-1.png]
 thumbnails: ["assets/thumb-1.png","assets/thumb-2.png","assets/thumb-3.png"]
 downloadfile: "assets/gnome-amazing-slides.otp"
 license: "CC-BY-SA"

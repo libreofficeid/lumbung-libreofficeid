@@ -6,6 +6,7 @@ creator:
   name: "Rania Amina"
   gitlink: "https://instagram.com/raniaamina.id"
 tags: ["LOTC","theme"]
+images: ["assets/screenshot-2.png"]
 thumbnails: ["assets/screenshot-2.png","assets/screenshot-1.png"]
 downloadfile: "assets/kamen-rider-kuuga.lotc"
 license: "CC-BY-SA"

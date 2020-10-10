@@ -6,6 +6,7 @@ creator:
   name: "Darian Rizaluddin"
   gitlink: "https://darian.my.id"
 tags: ["LibreOffice Writer","Templat Artikel"]
+images: [assets/thumbnail.png]
 thumbnails: [assets/thumbnail.png]
 downloadfile: "assets/authorguidelines_jtsiskom2016-Darian-Rizaludin.odt"
 license: "CC-BY-SA"

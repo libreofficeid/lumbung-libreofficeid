@@ -6,6 +6,7 @@ creator:
   name: "Epsi Nurwijayadi"
   gitlink: "https://github.com/epsi-rns"
 tags: ["libreoffice impress","template","templat"]
+images: [assets/thumbs-1.png]
 thumbnails: ["assets/thumbs-1.png","assets/thumbs-2.png","assets/thumbs-3.png","assets/thumbs-4.png"]
 downloadfile: "assets/Candyclone_by_Epsi_Nurwijayadi.zip"
 license: "CC-BY-SA 4.0"

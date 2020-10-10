@@ -6,6 +6,7 @@ creator:
   name: "Dwi Alita"
   gitlink: "https://instagram.com/ealita.id"
 tags: ["libreoffice impress","template","templat"]
+images: [assets/thumb-1.png]
 thumbnails: ["assets/thumb-1.png","assets/thumb-2.png","assets/thumb-3.png"]
 downloadfile: "assets/yellow_idea_by_Dwi_Alita.zip"
 license: "CC-BY-SA 4.0"

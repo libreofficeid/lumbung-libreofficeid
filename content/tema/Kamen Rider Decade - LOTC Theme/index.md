@@ -6,6 +6,7 @@ creator:
   name: "Rania Amina"
   gitlink: "https://instagram.com/raniaamina.id"
 tags: ["LOTC","theme"]
+images: ["assets/thumbnail-1.png"]
 thumbnails: ["assets/thumbnail-1.png","assets/thumbnail-2.png"]
 downloadfile: "assets/kamen-rider-decade.lotc"
 license: "CC-BY-SA"

@@ -6,6 +6,7 @@ creator:
   name: "Rania Amina"
   gitlink: "https://instagram.com/raniaamina.id"
 tags: ["LOTC","theme"]
+images: ["assets/screenshot-1.png"]
 thumbnails: ["assets/screenshot-1.png","assets/screenshot-2.png"]
 downloadfile: "assets/ambiance.lotc"
 license: "CC-BY-SA"

@@ -6,6 +6,7 @@ creator:
   name: "Budi Aryo"
   gitlink: "https://instagram.com/tokofoss"
 tags: ["libreoffice impress","template","templat"]
+images: [assets/thumb-1.png]
 thumbnails: ["assets/thumb-1.png","assets/thumb-2.png","assets/thumb-3.png"]
 downloadfile: "assets/growing_liberty_by_Budi_Aryo.zip"
 license: "CC-BY-SA 4.0"

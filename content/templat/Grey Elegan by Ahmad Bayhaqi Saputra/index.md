@@ -6,6 +6,7 @@ creator:
   name: "Ahmad Bayhaqi Saputra"
   gitlink: "https://github.com/youruser"
 tags: ["libreoffice impress","template","templat"]
+images: [assets/thumb-1.png]
 thumbnails: ["assets/thumb-1.png","assets/thumb-2.png","assets/thumb-3.png","assets/thumb-4.png"]
 downloadfile: "assets/Grey_Elegant_Ahmad_Bayhaqi_Saputra.zip"
 license: "CC-BY-SA 4.0"

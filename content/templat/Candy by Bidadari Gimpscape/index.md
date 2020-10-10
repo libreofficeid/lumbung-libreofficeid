@@ -6,6 +6,7 @@ creator:
   name: "Bidadari Gimpscape"
   gitlink: "https://github.com/gimpscape"
 tags: ["libreoffice impress","template","templat"]
+images: [assets/thumb-1.png]
 thumbnails: ["assets/thumb-1.png","assets/thumb-2.png","assets/thumb-3.png"]
 downloadfile: "assets/Candy_Template_by_Bidadari_Gimpscape.zip"
 license: "CC-BY-SA 4.0"
