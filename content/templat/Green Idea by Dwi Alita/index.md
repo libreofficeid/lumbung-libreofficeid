@@ -1,6 +1,6 @@
 ---
 title: "Green Idea by Dwi Alita"
-date: 2020-10-10T09:50:50+07:00
+date: 2020-10-10T10:31:50+07:00
 categories: "Templat"
 creator: 
   name: "Dwi Alita"

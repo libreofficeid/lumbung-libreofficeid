@@ -1,6 +1,6 @@
 ---
 title: "Growing Liberty by Budi Aryo"
-date: 2020-10-10T09:51:06+07:00
+date: 2020-10-10T10:20:06+07:00
 categories: "Templat"
 creator: 
   name: "Budi Aryo"

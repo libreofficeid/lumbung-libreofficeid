@@ -1,6 +1,6 @@
 ---
 title: "Yellow Idea by Dwi Alita"
-date: 2020-10-10T09:50:43+07:00
+date: 2020-10-10T10:30:43+07:00
 categories: "Templat"
 creator: 
   name: "Dwi Alita"
