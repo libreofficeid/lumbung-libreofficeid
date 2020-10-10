@@ -6,7 +6,7 @@ creator:
   name: "Aris Winardi"
   gitlink: "https://winardiaris.xyz/"
 tags: ["LOTC","theme"]
-images: ["assets/screenshot-1.png"]
+images: ["tema/pikachu-lotc-theme/assets/screenshot-1.png"]
 thumbnails: ["assets/screenshot-1.png","assets/screenshot-1.png"]
 downloadfile: "assets/pikachu.lotc"
 license: "CC-BY-SA"
