@@ -5,7 +5,7 @@ categories: "Templat"
 creator: 
   name: "Hervy Qurrotul Ainur"
   gitlink: "https://github.com/hervyqa"
-tags: []
+tags: ["libreoffice impress","template","templat"]
 thumbnails: ["assets/thumb-1.png","assets/thumb-2.png","assets/thumb-3.png"]
 downloadfile: "assets/gnome-amazing-slides.otp"
 license: "CC-BY-SA"
