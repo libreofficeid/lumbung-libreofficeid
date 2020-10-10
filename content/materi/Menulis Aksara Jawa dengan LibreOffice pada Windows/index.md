@@ -6,6 +6,7 @@ creator:
   name: "Faiq Aminuddin"
   gitlink: "https://www.blogger.com/profile/11327745115944679955"
 tags: ["LibreOffice Writer","Aksara Nusantasa"]
+images: ["materi/menulis-aksara-jawa-dengan-libreoffice-pada-windows/assets/thumb-1.png"]
 thumbnails: ["assets/thumb-1.png","assets/thumb-2.png","assets/thumb-3.png"]
 downloadfile: "assets/menulis-aksara-jawa-pada-LibreOffice-windows.odt"
 license: "CC by"

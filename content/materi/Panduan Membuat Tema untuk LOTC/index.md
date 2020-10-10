@@ -6,7 +6,7 @@ creator:
   name: "LibreOffice ID"
   gitlink: "https://github.com/libreofficeid"
 tags: ["Panduan","LOTC","Tema"]
-images: ["assets/thumbnail.png"]
+images: ["materi/panduan-membuat-tema-untuk-lotc/assets/thumbnail.png"]
 thumbnails: [assets/thumbnail.png]
 downloadfile: "assets/lotc-image-assets-template.zip"
 license: "CC-BY-SA"

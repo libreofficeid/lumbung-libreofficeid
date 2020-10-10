@@ -6,7 +6,7 @@ creator:
   name: "Rania Amina"
   gitlink: "https://instagram.com/raniaamina.id"
 tags: ["loci","personalize"]
-images: ["assets/thumb.webp"]
+images: ["materi/personalize-libreoffice-appereance/assets/thumb.webp"]
 thumbnails: ["assets/thumb.webp"]
 downloadfile: "assets/Ahmad Romadhon H_Personalize LibreOffice Appearance.pdf"
 license: "CC-BY-SA"
