@@ -1,4 +1,5 @@
 baseURL: "https://lumbung.libreoffice.id/"
+summaryLength: 45
 languageCode: "id"
 title: "Lumbung LibreOffice Indonesia"
 paginate: 5
