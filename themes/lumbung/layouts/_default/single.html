@@ -41,15 +41,6 @@
                     <div class="row" style="padding-bottom: 10px;">
                         <a href="{{ .Params.Downloadfile }}" class="btn btn-primary btn-block btn-sm text-center d-block" type="button" style="height: 35px; width: 70%; background-color: rgb(23,162,4);">Unduh</a>
                     </div>
-                        <form action="https://libreofficeid.glitch.me/suka" method="POST">
-                    <div class="row">
-                        <input type="hidden" name="idcontent" value="{{ md5 .RelPermalink }}"/>
-                        <input type="hidden" name="fromuri" value="{{ .Permalink }}"/>
-                        <input type="hidden" name="idpengirim"/>
-                        <button id="btnSuka" class="btn btn-outline-success btn-block btn-sm text-center d-block" type="button" style="height: 35px;width:70%">Suka</button>
-                    </div>
-                        </form>
-                    <br>
                     <div class="row" style="height: 35px;">
                         <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/user.svg" alt="user"></i></div>
                         <div class="col-sm-10" style="padding-top: 4px;">
@@ -60,12 +51,6 @@
                         <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/calendar.svg" alt="calendar"></i></div>
                         <div class="col-sm-10 align-self-md-baseline" style="padding-top: 4px;">
                             <p class="py-2" style="font-family: 'Source Sans Pro', sans-serif;line-height: 12px;font-size: 14px;">{{ .Date.Day }} {{ index $.Site.Data.bulan (printf "%d" .Date.Month) | humanize }} {{ .Date.Year }}</p>
-                        </div>
-                    </div>
-                    <div class="row" style="height: 35px;">
-                        <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/heart.svg" alt="heart"></i></div>
-                        <div class="col-sm-10 align-self-md-baseline" style="padding-top: 4px;">
-                            <p class="py-2" style="font-family: 'Source Sans Pro', sans-serif;height: 44px;line-height: 12px;font-size: 14px;"><span id="disukai"></span> Orang Menyukai</p>
                         </div>
                     </div>
                     <!-- <div class="row" style="height: 35px;">
@@ -84,7 +69,7 @@
                         <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/tags.svg" alt="tagar"></i></div>
                         <div class="col-sm-10 align-self-md-baseline" style="padding-top: 4px;">
                             {{ range .Params.Tags }}
-                                <a class="badge badge-success" href="{{ "tags" | absURL }}/{{.}}">{{.}}</a>
+                            <a class="badge badge-success" href="{{ "tags" | absURL }}/{{.}}">{{.}}</a>
                             {{ end }}
                         </div>
                     </div>
@@ -92,53 +77,29 @@
             </div>
         </div>
     </div>
+    {{ if .Site.DisqusShortname}}
+    <div class="container">
+        <div id="disqus_thread" class="my-3"></div>
+    </div>
+    {{ end }}
 {{ end }}
 {{ define "footerfiles" }}
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
-    <script>
-    $(function(){
-        var suka = Cookies.get("data");
-        ceksuka();
-        if(location.search.substr(1,6) === "status"){
-            let sukaku = parseInt(location.search.substr(8,1));
-            //alert("sukses memperbarui suka! "+sukaku);
-            Cookies.remove("data");
-            Cookies.set("data",sukaku,{path:'{{ .RelPermalink }}'});
-            location.href = "{{ .Permalink }}";
-        }
-        if(location.search.substr(1,7) === "payload"){
-            var p = decodeURI(location.search.substr(9));
-            Cookies.set("user",p);
-            location.href = "{{ .Permalink }}";
-        }
+{{ if .Site.DisqusShortname}}
+<script>
+var disqus_config = function () {
+this.page.url = {{ .Permalink }}; 
+this.page.identifier = {{ .Permalink | md5}};
+};
 
-        $.get("https://libreofficeid.glitch.me/suka/"+$("input[name='idcontent']").val(),null, function(result){
-            $("#disukai").html(result.disukai);
-        });
-
-        function ceksuka(){
-            if(suka == undefined || suka == null)
-                suka = 0
-            if(suka == 1){
-                $("#btnSuka").html("Batal Suka");
-                suka = 0;
-                return;
-            }else{
-                $("#btnSuka").html("Suka");
-                suka = 1;
-                return;
-            }
-        }
-
-        // handle tombol suka
-        $("#btnSuka").on("click", function(){
-            if(Cookies.get('user')){
-                $("input[name='idpengirim']").val(Cookies.get('user'));
-            }
-            $("input[name='data']").val(suka);
-            $("form").submit();
-        })
-
-    })
-    </script>
+(function() { // DON'T EDIT BELOW THIS LINE
+if (window.location.hostname == "localhost")
+    return;
+var d = document, s = d.createElement('script');
+s.src = 'https://{{.Site.DisqusShortname}}.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{{ end }}
 {{ end }}
