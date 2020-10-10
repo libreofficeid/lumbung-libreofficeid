@@ -6,7 +6,7 @@ creator:
   name: "Imron Rosyadi"
   gitlink: "https://imron.my.id"
 tags: ["LibreOffice Writer","Templat","Artikel","Makalah"]
-images: [assets/template-makalah-2019.png]
+images: [templat/template-makalah/assets/template-makalah-2019.png]
 thumbnails: ["assets/template-makalah-2019.png"]
 downloadfile: "assets/Template-Makalah-2019.ott"
 license: "CC-BY-SA"

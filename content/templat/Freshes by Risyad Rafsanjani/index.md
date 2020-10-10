@@ -6,7 +6,7 @@ creator:
   name: "Risyad Rafsanjani"
   gitlink: "https://instagram.com/atmorojo"
 tags: ["libreoffice impress","template","templat"]
-images: [assets/Preview_1.png]
+images: [templat/freshes-by-risyad-rafsanjani/assets/Preview_1.png]
 thumbnails: ["assets/Preview_1.png","assets/Preview_2.png","assets/Preview_3.png"]
 downloadfile: "assets/Freshes _by_Risyad_Rafsanjani.zip"
 license: "CC-BY-SA 4.0"
