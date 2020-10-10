@@ -6,7 +6,7 @@ creator:
   name: "Rania Amina"
   gitlink: "https://instagram.com/raniaamina.id"
 tags: ["LOTC","theme"]
-images: ["assets/screenshot-1.png"]
+images: ["tema/opensuse-theme-lotc-theme/assets/screenshot-1.png"]
 thumbnails: ["assets/screenshot-1.png","assets/screenshot-2.png"]
 downloadfile: "assets/opensuse-theme.lotc"
 license: "CC-BY-SA"
