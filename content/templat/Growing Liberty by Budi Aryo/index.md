@@ -12,3 +12,5 @@ downloadfile: "assets/growing_liberty_by_Budi_Aryo.zip"
 license: "CC-BY-SA 4.0"
 ---
 Salah satu dari **Top 6 Templat** LibreOffice Impress yang dibuat oleh **Budi Aryo**. Templat ini dibuat dalam rangka perayaan satu dekade LibreOffice sekaligus bentuk kontribusi komunitas LibreOffice Indonesia untuk menyediakan templat keren dan siap pakai.
+
+[**Unduh pratinjau templat**](assets/growing-liberty-preview.pdf)
