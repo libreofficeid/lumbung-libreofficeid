@@ -7,7 +7,7 @@ creator:
   gitlink: "https://instagram.com/raniaamina.id"
 tags: []
 thumbnails: [assets/thumb.png]
-images: [templat/green-idea-by-dwi-alita/assets/thumb.png]
+images: [templat/gotong-royong-by-rania-amina/assets/thumb.png]
 downloadfile: "assets/gotong-royong-by-raniaamina-and-gimpscape.zip"
 license: "CC-BY-SA 4.0"
 ---
