@@ -13,4 +13,4 @@ license: "CC-BY-SA 4.0"
 ---
 Template LibreOffice Impress yang dibuat oleh **Dwi Alita**. Templat ini dibuat dalam rangka perayaan satu dekade LibreOffice sekaligus bentuk kontribusi komunitas LibreOffice Indonesia untuk menyediakan templat keren dan siap pakai.
 
-[**Unduh pratinju templat**](assets/green_idea.pdf)
+[**Unduh pratinjau templat**](assets/green_idea.pdf)

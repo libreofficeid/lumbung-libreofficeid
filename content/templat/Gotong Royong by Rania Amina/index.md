@@ -11,6 +11,6 @@ images: [templat/green-idea-by-dwi-alita/assets/thumb.png]
 downloadfile: "assets/gotong-royong-by-raniaamina-and-gimpscape.zip"
 license: "CC-BY-SA 4.0"
 ---
-Template Gotong Royong merupakan template ringkas untuk pelbagai kebutuhan dasar presentasi. Templat ini dikerjakan oleh Rania Amina dan berkolaborasi dengan beberapa rekan lainnya di komunitas Gimpscape.
+Templat Gotong Royong merupakan template ringkas untuk pelbagai kebutuhan dasar presentasi. Templat ini dikerjakan oleh Rania Amina dan berkolaborasi dengan beberapa rekan lainnya di komunitas Gimpscape.
 
 [**Unduh pratinjau templat**](assets/preview-gotong-royong.pdf)
