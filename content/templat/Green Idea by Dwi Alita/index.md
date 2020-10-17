@@ -8,7 +8,9 @@ creator:
 tags: ["libreoffice impress","template","templat"]
 images: [templat/green-idea-by-dwi-alita/assets/thumb-1.png]
 thumbnails: ["assets/thumb-1.png","assets/thumb-2.png","assets/thumb-3.png"]
-downloadfile: "assets/green_idea_by_Dwi_Alita.zip.zip"
+downloadfile: "assets/green_idea_by_Dwi_Alita.zip"
 license: "CC-BY-SA 4.0"
 ---
 Template LibreOffice Impress yang dibuat oleh **Dwi Alita**. Templat ini dibuat dalam rangka perayaan satu dekade LibreOffice sekaligus bentuk kontribusi komunitas LibreOffice Indonesia untuk menyediakan templat keren dan siap pakai.
+
+[**Unduh pratinju templat**](assets/green_idea.pdf)
