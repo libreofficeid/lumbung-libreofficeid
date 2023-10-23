@@ -1,104 +1,113 @@
 {{ define "main" }}
-    <div class="container d-none d-lg-block pt-3">
-        {{- partial "breadcrumb.html" . -}}
-    </div>
-    <div class="container d-none d-lg-block thumbnail-detail">
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-6">
-                <div class="carousel slide" data-ride="carousel" id="carousel-1" data-interval="false">
-                    <div class="carousel-inner" role="listbox">
+<div class="container d-none d-lg-block pt-3">
+    {{- partials "breadcrumb.html" . -}}
+</div>
+<div class="container d-none d-lg-block thumbnail-detail">
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <div class="carousel slide" data-ride="carousel" id="carousel-1" data-interval="false">
+                <div class="carousel-inner" role="listbox">
                     {{ range $index, $konten := .Params.Thumbnails }}
-                        <div class="carousel-item {{ if eq $index 0 }}active{{end}}">
-                            <img class="img-thumbnail" src="{{ $konten }}" alt="thumbnail{{ $index }}">
-                        </div>
-                    {{ end }}
+                    <div class="carousel-item {{ if eq $index 0 }}active{{end}}">
+                        <img class="img-thumbnail" src="{{ $konten }}" alt="thumbnail{{ $index }}">
                     </div>
-                    
-                    <ol class="carousel-indicators">
-                    {{ range $index, $konten := .Params.Thumbnails }}
-                        <li class="{{ if eq $index 0 }}active{{end}}" data-target="#carousel-1" data-slide-to="{{$index}}">
-                            <img class="img-thumbnail" src="{{ $konten }}" alt="thumbnail{{ $index }}" style="width: 2rem;min-width: 1rem;">
-                        </li>
                     {{ end }}
-                    </ol>
                 </div>
 
+                <ol class="carousel-indicators">
+                    {{ range $index, $konten := .Params.Thumbnails }}
+                    <li class="{{ if eq $index 0 }}active{{end}}" data-target="#carousel-1" data-slide-to="{{$index}}">
+                        <img class="img-thumbnail" src="{{ $konten }}" alt="thumbnail{{ $index }}" style="width: 2rem;min-width: 1rem;">
+                    </li>
+                    {{ end }}
+                </ol>
             </div>
-            <div class="col-sm-3 text-center text-sm-right"></div>
+
         </div>
+        <div class="col-sm-3 text-center text-sm-right"></div>
     </div>
-    <div class="detail-post">
-        <div class="container d-none d-lg-block">
-            <div class="row">
-                <div class="col-md-9" style="padding-right: 200px;">
-                    <h4 style="color: rgb(23,162,4); padding-bottom: 14px;"><b>{{ .Title }}</b></h4>
-                    <p style="color: rgb(66,71,76);font-family: 'Source Sans Pro', sans-serif;font-size: 12px;">
+</div>
+<div class="detail-post">
+    <div class="container d-none d-lg-block">
+        <div class="row">
+            <div class="col-md-9" style="padding-right: 200px;">
+                <h4 style="color: rgb(23,162,4); padding-bottom: 14px;"><b>{{ .Title }}</b></h4>
+                <p style="color: rgb(66,71,76);font-family: 'Source Sans Pro', sans-serif;font-size: 12px;">
                     {{ .Content }}
-                    </p>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <div class="row" style="padding-bottom: 10px;">
+                    <a href="{{ .Params.Downloadfile }}" class="btn btn-primary btn-block btn-sm text-center d-block" type="button" style="height: 35px; width: 70%; background-color: rgb(23,162,4);">Unduh</a>
                 </div>
-                <div class="col-md-3">
-                    <div class="row" style="padding-bottom: 10px;">
-                        <a href="{{ .Params.Downloadfile }}" class="btn btn-primary btn-block btn-sm text-center d-block" type="button" style="height: 35px; width: 70%; background-color: rgb(23,162,4);">Unduh</a>
+                <div class="row" style="height: 35px;">
+                    <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/user.svg" alt="user"></i></div>
+                    <div class="col-sm-10" style="padding-top: 4px;">
+                        <p class="py-2" style="font-family: 'Source Sans Pro', sans-serif;line-height: 12px;font-size: 14px;"><a href="{{ .Params.Creator.Gitlink }}">{{ .Params.Creator.Name }}</a></p>
                     </div>
-                    <div class="row" style="height: 35px;">
-                        <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/user.svg" alt="user"></i></div>
-                        <div class="col-sm-10" style="padding-top: 4px;">
-                            <p class="py-2" style="font-family: 'Source Sans Pro', sans-serif;line-height: 12px;font-size: 14px;"><a href="{{ .Params.Creator.Gitlink }}">{{ .Params.Creator.Name }}</a></p>
-                        </div>
+                </div>
+                <div class="row" style="height: 35px;">
+                    <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/calendar.svg" alt="calendar"></i></div>
+                    <div class="col-sm-10 align-self-md-baseline" style="padding-top: 4px;">
+                        <p class="py-2" style="font-family: 'Source Sans Pro', sans-serif;line-height: 12px;font-size: 14px;">{{ .Date.Day }} {{ index $.Site.Data.bulan (printf "%d" .Date.Month) | humanize }} {{ .Date.Year }}</p>
                     </div>
-                    <div class="row" style="height: 35px;">
-                        <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/calendar.svg" alt="calendar"></i></div>
-                        <div class="col-sm-10 align-self-md-baseline" style="padding-top: 4px;">
-                            <p class="py-2" style="font-family: 'Source Sans Pro', sans-serif;line-height: 12px;font-size: 14px;">{{ .Date.Day }} {{ index $.Site.Data.bulan (printf "%d" .Date.Month) | humanize }} {{ .Date.Year }}</p>
-                        </div>
-                    </div>
-                    <!-- <div class="row" style="height: 35px;">
+                </div>
+                <!-- <div class="row" style="height: 35px;">
                         <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/download.svg" alt="download"></i></div>
                         <div class="col-sm-10 align-self-md-baseline" style="padding-top: 4px;">
                             <p class="py-2" style="font-family: 'Source Sans Pro', sans-serif;font-size: 14px;line-height: 12px;">Diunduh 300 kali</p>
                         </div>
                     </div> -->
-                    <div class="row" style="height: 35px;">
-                        <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/license.svg" alt="lisensi"></i></div>
-                        <div class="col-sm-10 align-self-md-baseline" style="padding-top: 4px;">
-                            <p class="py-2" style="font-family: 'Source Sans Pro', sans-serif;height: 44px;line-height: 12px;font-size: 14px;">{{ .Params.License }}</p>
-                        </div>
+                <div class="row" style="height: 35px;">
+                    <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/license.svg" alt="lisensi"></i></div>
+                    <div class="col-sm-10 align-self-md-baseline" style="padding-top: 4px;">
+                        <p class="py-2" style="font-family: 'Source Sans Pro', sans-serif;height: 44px;line-height: 12px;font-size: 14px;">{{ .Params.License }}</p>
                     </div>
-                    <div class="row" style="height: 35px;">
-                        <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/tags.svg" alt="tagar"></i></div>
-                        <div class="col-sm-10 align-self-md-baseline" style="padding-top: 4px;">
-                            {{ range .Params.Tags }}
-                            <a class="badge badge-success" href="{{ "tags" | absURL }}/{{.}}">{{.}}</a>
-                            {{ end }}
-                        </div>
+                </div>
+                <div class="row" style="height: 35px;">
+                    <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/tags.svg" alt="tagar"></i></div>
+                    <div class="col-sm-10 align-self-md-baseline" style="padding-top: 4px;">
+                        {{ range .Params.Tags }}
+                        <a class="badge badge-success" href="{{ "tags" | absURL }}/{{.}}">{{.}}</a>
+                        {{ end }}
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    {{ if .Site.DisqusShortname}}
-    <div class="container">
-        <div id="disqus_thread" class="my-3"></div>
-    </div>
-    {{ end }}
+</div>
+{{ if .Site.DisqusShortname}}
+<div class="container">
+    <div id="disqus_thread" class="my-3"></div>
+</div>
+{{ end }}
 {{ end }}
 {{ define "footerfiles" }}
 {{ if .Site.DisqusShortname}}
 <script>
-var disqus_config = function () {
-this.page.url = {{ .Permalink }}; 
-this.page.identifier = {{ .Permalink | md5}};
-};
+    var disqus_config = function() {
+        this.page.url = {
+            {
+                .Permalink
+            }
+        };
+        this.page.identifier = {
+            {
+                .Permalink | md5
+            }
+        };
+    };
 
-(function() { // DON'T EDIT BELOW THIS LINE
-if (window.location.hostname == "localhost")
-    return;
-var d = document, s = d.createElement('script');
-s.src = 'https://{{.Site.DisqusShortname}}.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
+    (function() { // DON'T EDIT BELOW THIS LINE
+        if (window.location.hostname == "localhost")
+            return;
+        var d = document,
+            s = d.createElement('script');
+        s.src = 'https://{{.Site.DisqusShortname}}.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 {{ end }}
