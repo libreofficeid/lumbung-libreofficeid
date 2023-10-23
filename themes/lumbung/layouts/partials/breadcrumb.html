@@ -1,9 +1,9 @@
 <div class="row mb-3" id="breadcrumbs">
     <a class="text-success" href="/">Lumbung</a>&nbsp;
-    {{ range first 2 (split .URL "/") }}
-        {{ if gt (len . ) 0 }}
-            /&nbsp;<a class="text-success" href="/{{ . }}">{{ humanize . }}&nbsp;</a>
-        {{ end }}
+    {{ range first 2 (split .RelPermalink "/") }}
+    {{ if gt (len . ) 0 }}
+    /&nbsp;<a class="text-success" href="/{{ . }}">{{ humanize . }}&nbsp;</a>
+    {{ end }}
     {{ end }}
     / {{.Title}}
 </div>
